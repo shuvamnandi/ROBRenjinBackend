@@ -1,22 +1,21 @@
 package org.nus.pssn;
 
 import javax.script.*;
-import org.renjin.eval.*;
-import org.renjin.sexp.*;
 import org.renjin.script.*;
 import java.io.StringWriter;
 import java.io.FileNotFoundException;
 
-public class RenjinExample {
+public class ROBRenjinRunner {
     // create a script engine manager:
     private static final RenjinScriptEngineFactory FACTORY = new RenjinScriptEngineFactory();
     // create a Renjin engine:
     private static final ScriptEngine ENGINE = FACTORY.getScriptEngine();
     private static StringWriter OutputWriter = new StringWriter();
 
-    public RenjinExample() {
+    public ROBRenjinRunner() {
         ENGINE.getContext().setWriter(OutputWriter);
     }
+
     public static String evalR(String codeInR) {
         try {
             return ENGINE.eval(codeInR).toString();
