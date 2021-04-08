@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.nus.pssn</groupId>
-    <artifactId>RenjinExample</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>ROBRenjinRunner</artifactId>
+    <version>1.01-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -51,13 +51,13 @@
 
     <repositories>
         <repository>
+            <id>image-j-net</id>
+            <url>http://maven.imagej.net/content/repositories/public/</url>
+        </repository>
+        <repository>
             <id>bedatadriven</id>
             <name>bedatadriven public repo</name>
             <url>https://nexus.bedatadriven.com/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>image-j-net</id>
-            <url>http://maven.imagej.net/content/repositories/public/</url>
         </repository>
     </repositories>
 
@@ -71,6 +71,16 @@
             <groupId>org.renjin</groupId>
             <artifactId>renjin-script-engine</artifactId>
             <version>0.7.0-RC7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.renjin.cran</groupId>
+            <artifactId>matlib</artifactId>
+            <version>0.4.1-b1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.renjin.cran</groupId>
+            <artifactId>exptest</artifactId>
+            <version>1.2-b244</version>
         </dependency>
     </dependencies>
 </project>
