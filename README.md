@@ -9,16 +9,16 @@ The below guide serves the purpose of explaining to our users how the system cou
 
 # Technical Documentation
 
-
-
 ## How to Build and Run the Application from Source Code / Repositories
 
 ### Java Renjin
 
-The Java Renjin project associated with this repository is the backbone of our R programming language integration which runs on the Browser. To build this project, perform the following steps.
+The Java Renjin project associated with this repository is the backbone of our R programming language integration which runs on the Browser. It is available at the GitHub repository https://github.com/shuvamnandi/ROBRenjinBackend.git.
 
 Requirements: 
 - JDK version used to built Renjin must be JDK 1.8. 
+
+To build this project, perform the following steps: 
 
 1. Clone the repository locally: `git clone https://github.com/shuvamnandi/ROBRenjinBackend.git`.
 2. Change into the directory cloned: `cd ROBRenjinBackend`
@@ -28,7 +28,7 @@ Requirements:
 An example R code can be run by running by calling the main function in the JAR package using following command:
 `java -jar target/ROBRenjinRunner-1.01-SNAPSHOT-jar-with-dependencies.jar`
 
-The Java JAR package thus generated is going to be deployed inside the web directory to be executed on the browser. This is already done and is available within the UI code using Cadet front-end React application.
+The Java JAR package thus generated also contains all of its dependencies from Renjin and also R packages that can be imported for evaluating R code. This JAR package would be deployed inside the directory of the web server run which executes on the browser. This is already done and is available within the UI code repository with this GitHub repository, hosting the Cadet front-end React application which supports R code execution.
 
 ### DoppioJS & JavaPolyJS
 
@@ -43,3 +43,16 @@ The Cadet Front-end code repository is available at https://github.com/nus-cs421
 
 
 ## Extending the product with other libraries from Renjin
+
+R Packages like **matlib** are included to be used for executing code on the browser. These are added as Maven dependencies within the `pom.xml` file present in the ROBRenjinBackend GitHub repository.
+
+The above dependency is added to the project as per an example below:
+`
+<dependency>
+    <groupId>org.renjin.cran</groupId>
+    <artifactId>matlib</artifactId>
+    <version>0.4.1-b1</version>
+</dependency>
+`
+
+There are several CRAN (the Comprehensive R Archive Network) and BioConductor packages available at the website http://packages.renjin.org. The packages in this repository are built and packaged for use with Renjin. Not all packages can be built for Renjin, therefore the available list of packages could be searched to confirm whether a given package is available for Renjin.
