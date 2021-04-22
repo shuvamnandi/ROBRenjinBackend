@@ -8,6 +8,7 @@ The below guide serves the purpose of explaining to our users how the system cou
 ### How to Use Our System
 It is fairly simple to work with ROB. Just go to the URL, be a little patient and then run your R code. 
 
+<iframe src="https://giphy.com/embed/7kT51goXUzMaSrmpIv" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/7kT51goXUzMaSrmpIv">via GIPHY</a></p>
 
 ### Features 
 -	All the core features of language R are supported except plotting and other graphical features.
