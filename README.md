@@ -4,7 +4,9 @@ The below guide serves the purpose of explaining to our users how the system cou
 ## How to Use Our System
 
 
-## Features and Limitations
+## Features 
+
+## Limitations
 
 
 # Technical Documentation
