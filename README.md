@@ -58,9 +58,10 @@ The Cadet Front-end code repository is available at https://github.com/nus-cs421
 4. Run `yarn link x-slang` to use your local x-slang for x-frontend.
 5. Run `yarn install` to install dependencies.
 6. Run `yarn run start` to start the server at localhost:8000. It might take a couple of minutes for the server to start.
-7. Point your browser to http://localhost:8000 to see your local Source Academy.
+7. Point your browser to http://localhost:8000 to see local Source Academy capable of running R code on the browser.
 
-The 
+The Java Renjin JAR package is already part of this repository, and hence does not require copying over the package built from the previous steps again, in order to integrate it with this setup. The same goes for the modified JavaPolyJS library used to run is also part of this repository.
+
 
 ### Renjin Version and Compatibility
 
