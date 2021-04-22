@@ -6,9 +6,10 @@ Most popular high-level languages have playgrounds and scratch pads to work out 
 The below guide serves the purpose of explaining to our users how the system could be used and what are the various features it offers, and limitations it comes with. 
 
 ### How to Use Our System
-It is fairly simple to work with ROB. Just go to the URL, be a little patient and then run your R code. 
+It is fairly simple to work with ROB. Just go to the URL, be a little patient and then run your R code. A simple demo:
 
-![Alt Text]("https://giphy.com/embed/7kT51goXUzMaSrmpIv")
+https://user-images.githubusercontent.com/13325139/115745516-17052f80-a3c6-11eb-9cdf-dad476dd69bb.mov
+
 
 ### Features 
 -	All the core features of language R are supported except plotting and other graphical features.
