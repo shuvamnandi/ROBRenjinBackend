@@ -16,7 +16,7 @@ It is fairly simple to work with ROB. Just go to the URL, be a little patient an
 -	Static analysis of the code using the lint library is available to teach and learn better
 
 ### Limitations
--	The initial setup and loading takes roughly 1 minute but once the system in booted on the browser, it’s quite fast to run and test code.
+-	The initial setup and loading takes roughly 1 minute but once the system in booted on the browser, it is quite fast to run and test code.
 -	The system is meant for educational purposes and small tasks. It can be slow to run computationally intensive code.  
 
 # Technical Documentation
@@ -59,12 +59,12 @@ The Cadet Front-end code repository is available at https://github.com/nus-cs421
 6. Run `yarn run start` to start the server at localhost:8000. It might take a couple of minutes for the server to start.
 7. Point your browser to http://localhost:8000 to see local Source Academy capable of running R code on the browser.
 
-The Java Renjin JAR package is already part of this repository, and hence does not require copying over the package built from the previous steps again, in order to integrate it with this setup. The same goes for the modified JavaPolyJS library used to run is also part of this repository.
+The Java Renjin JAR package is already part of this repository, and hence does not require copying over the package built from the previous steps again, in order to integrate it with this setup. The same goes for the modified JavaPolyJS library used to run this generated Java JAR package, which has also been made part of this repository.
 
 
 ## Renjin Version and Compatibility
 
-The Renjin Version used (as specified in `pom.xml`) should be as below (newer versions do not work on DoppioJVM). This is a limitation of DoppioJVM.
+The Renjin Version used (as specified in `pom.xml`) should be as below (newer versions do not work on DoppioJVM). This is a limitation on DoppioJVM.
 
 ```
 <dependency>
