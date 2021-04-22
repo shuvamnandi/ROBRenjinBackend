@@ -16,12 +16,18 @@ The below guide serves the purpose of explaining to our users how the system cou
 The Java Renjin project associated with this repository is the backbone of our R programming language integration which runs on the Browser. It is available at the GitHub repository https://github.com/shuvamnandi/ROBRenjinBackend.git.
 
 Requirements: 
-- JDK version used to built Renjin must be JDK 1.8. 
+- JDK version used to built Renjin must be JDK 1.8.
+- Renjin Version used (as specified in `pom.xml`) should be as follows (newer versions do not work on DoppioJVM):
+`<dependency>
+    <groupId>org.renjin</groupId>
+    <artifactId>renjin-script-engine</artifactId>
+    <version>0.7.0-RC7</version>
+</dependency>`
 
 To build this project, perform the following steps: 
 
 1. Clone the repository locally: `git clone https://github.com/shuvamnandi/ROBRenjinBackend.git`.
-2. Change into the directory cloned: `cd ROBRenjinBackend`
+2. Change into the directory of the cloned repo: `cd ROBRenjinBackend`
 3. Run Maven package command: `mvn package`
 4. JAR package with dependencies is created at the path: **/target/ROBRenjinRunner-1.01-SNAPSHOT-jar-with-dependencies.jar** 
 
