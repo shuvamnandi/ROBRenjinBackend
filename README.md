@@ -44,11 +44,23 @@ An example R code can be run by running by calling the main function in the JAR 
 
 The Java JAR package thus generated also contains all of its dependencies from Renjin and also R packages that can be imported for evaluating R code. This JAR package would be deployed inside the directory of the web server run which executes on the browser. This is already done and is available within the UI code repository with this GitHub repository, hosting the Cadet front-end React application which supports R code execution.
 
-#### DoppioJS & JavaPolyJS
+#### JavaPolyJS - A Wrapper JavaScript library for DoppioJVM & Browser FS
+
+An external library called JavaPoly was referred https://github.com/jdstroy/JavaPoly for integrating DoppioJVM & BrowserFS libraries for running Java (and thus R) code on the browser.
 
 #### Cadet Front-end
 
 The Cadet Front-end code repository is available at https://github.com/nus-cs4215/x-frontend-t3-ps-sn-r.git. 
+
+1. Make sure that you have the `x-slang` repository from https://github.com/nus-cs4215/x-slang-t3-ps-sn-r cloned locally, and have built it and linked it.
+2. Install a stable version of NodeJS. The active LTS or current version should work fine.
+3. Clone this repository and navigate to it using "cd" in your command line or shell tool.
+4. Run `yarn link x-slang` to use your local x-slang for x-frontend.
+5. Run `yarn install` to install dependencies.
+6. Run `yarn run start` to start the server at localhost:8000. It might take a couple of minutes for the server to start.
+7. Point your browser to http://localhost:8000 to see your local Source Academy.
+
+The 
 
 ### Renjin Version and Compatibility
 
