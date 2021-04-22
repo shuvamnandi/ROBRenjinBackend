@@ -18,11 +18,13 @@ The Java Renjin project associated with this repository is the backbone of our R
 Requirements: 
 - JDK version used to built Renjin must be JDK 1.8.
 - Renjin Version used (as specified in `pom.xml`) should be as follows (newer versions do not work on DoppioJVM):
-`<dependency>
+```
+<dependency>
     <groupId>org.renjin</groupId>
     <artifactId>renjin-script-engine</artifactId>
     <version>0.7.0-RC7</version>
-</dependency>`
+</dependency>
+```
 
 To build this project, perform the following steps: 
 
@@ -53,12 +55,12 @@ The Cadet Front-end code repository is available at https://github.com/nus-cs421
 R Packages like **matlib** are included to be used for executing code on the browser. These are added as Maven dependencies within the `pom.xml` file present in the ROBRenjinBackend GitHub repository.
 
 The above dependency is added to the project as per an example below:
-`
+```
 <dependency>
     <groupId>org.renjin.cran</groupId>
     <artifactId>matlib</artifactId>
     <version>0.4.1-b1</version>
 </dependency>
-`
+```
 
 There are several CRAN (the Comprehensive R Archive Network) and BioConductor packages available at the website http://packages.renjin.org. The packages in this repository are built and packaged for use with Renjin. Not all packages can be built for Renjin, therefore the available list of packages could be searched to confirm whether a given package is available for Renjin.
