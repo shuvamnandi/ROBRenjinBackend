@@ -1,6 +1,5 @@
 # R On Browser (ROB)
 
-
 Most popular high-level languages have playgrounds and scratch pads to work out simple questions or try some snippet of code. These platforms not only help a person to test some feature of a language but also can be used as a channel for education. For example, Kotlin has a fancy playground [ref] where interested developers can pick up the language. Unfortunately, we could only find one such platform [ref] for the language R that is packed with a lot of advertisements to generate revenue and also cover the costs of the backend servers. The lack of good options motivated us to develop an in-browser solution for R where people can teach, learn and conduct interviews. And this is how ROB (R On Browser) came into this world!
 
 
@@ -20,18 +19,18 @@ It is fairly simple to work with ROB. Just go to the URL, be a little patient an
 -	The initial setup and loading takes roughly 1 minute but once the system in booted on the browser, it’s quite fast to run and test code.
 -	The system is meant for educational purposes and small tasks. It can be slow to run computationally intensive code.  
 
-## Technical Documentation
+# Technical Documentation
 
-### How to Build and Run the Application from Source Code / Repositories
+## How to Build and Run the Application from Source Code / Repositories
 
-#### Java Renjin
+### Java Renjin
 
 The Java Renjin project associated with this repository is the backbone of our R programming language integration which runs on the Browser. It is available at the GitHub repository https://github.com/shuvamnandi/ROBRenjinBackend.git.
 
-##### Requirements: 
+#### Requirements: 
 - JDK version used to built Renjin must be JDK 1.8.
 
-##### To build this project, perform the following steps: 
+#### To build this project, perform the following steps: 
 
 1. Clone the repository locally: `git clone https://github.com/shuvamnandi/ROBRenjinBackend.git`.
 2. Change into the directory of the cloned repo: `cd ROBRenjinBackend`
@@ -44,11 +43,11 @@ An example R code can be run by running by calling the main function in the JAR 
 
 The Java JAR package thus generated also contains all of its dependencies from Renjin and also R packages that can be imported for evaluating R code. This JAR package would be deployed inside the directory of the web server run which executes on the browser. This is already done and is available within the UI code repository with this GitHub repository, hosting the Cadet front-end React application which supports R code execution.
 
-#### JavaPolyJS - A Wrapper JavaScript library for DoppioJVM & Browser FS
+### JavaPolyJS - A Wrapper JavaScript library for DoppioJVM & Browser FS
 
 An external library called JavaPoly was referred https://github.com/jdstroy/JavaPoly for integrating DoppioJVM & BrowserFS libraries for running Java (and thus R) code on the browser.
 
-#### Cadet Front-end
+### Cadet Front-end
 
 The Cadet Front-end code repository is available at https://github.com/nus-cs4215/x-frontend-t3-ps-sn-r.git. 
 
@@ -63,7 +62,7 @@ The Cadet Front-end code repository is available at https://github.com/nus-cs421
 The Java Renjin JAR package is already part of this repository, and hence does not require copying over the package built from the previous steps again, in order to integrate it with this setup. The same goes for the modified JavaPolyJS library used to run is also part of this repository.
 
 
-### Renjin Version and Compatibility
+## Renjin Version and Compatibility
 
 The Renjin Version used (as specified in `pom.xml`) should be as below (newer versions do not work on DoppioJVM). This is a limitation of DoppioJVM.
 
@@ -75,10 +74,10 @@ The Renjin Version used (as specified in `pom.xml`) should be as below (newer ve
 </dependency>
 ```
 
-### DoppioJVM Architecture and Performance Bottleneck  
+## DoppioJVM Architecture and Performance Bottleneck  
 
 
-### Extending the Product with other Libraries from Renjin
+## Extending the Product with other Libraries from Renjin
 
 R Packages like **matlib** are included to be used for executing code on the browser. These are added as Maven dependencies within the `pom.xml` file present in the ROBRenjinBackend GitHub repository.
 
