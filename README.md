@@ -17,14 +17,6 @@ The Java Renjin project associated with this repository is the backbone of our R
 
 #### Requirements: 
 - JDK version used to built Renjin must be JDK 1.8.
-- Renjin Version used (as specified in `pom.xml`) should be as follows (newer versions do not work on DoppioJVM):
-```
-<dependency>
-    <groupId>org.renjin</groupId>
-    <artifactId>renjin-script-engine</artifactId>
-    <version>0.7.0-RC7</version>
-</dependency>
-```
 
 #### To build this project, perform the following steps: 
 
@@ -47,6 +39,15 @@ The Cadet Front-end code repository is available at https://github.com/nus-cs421
 
 ## Renjin Version and Compatibility
 
+The Renjin Version used (as specified in `pom.xml`) should be as below (newer versions do not work on DoppioJVM). This is a limitation of DoppioJVM.
+
+```
+<dependency>
+    <groupId>org.renjin</groupId>
+    <artifactId>renjin-script-engine</artifactId>
+    <version>0.7.0-RC7</version>
+</dependency>
+```
 
 ## DoppioJVM architecture and performance bottleneck  
 
