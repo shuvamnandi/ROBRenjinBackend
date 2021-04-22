@@ -1,13 +1,24 @@
-# User Documentation
+# R On Browser (ROB)
+
+
+Most popular high-level languages have playgrounds and scratch pads to work out simple questions or try some snippet of code. These platforms not only help a person to test some feature of a language but also can be used as a channel for education. For example, Kotlin has a fancy playground [ref] where interested developers can pick up the language. Unfortunately, we could only find one such platform [ref] for the language R that is packed with a lot of advertisements to generate revenue and also cover the costs of the backend servers. The lack of good options motivated us to develop an in-browser solution for R where people can teach, learn and conduct interviews. And this is how ROB (R On Browser) came into this world!
+
+
 The below guide serves the purpose of explaining to our users how the system could be used and what are the various features it offers, and limitations it comes with. 
 
 ## How to Use Our System
+It is fairly simple to work with ROB. Just go to the URL, be a little patient and then run your R code. 
 
 
 ## Features 
+-	All the core features of language R are supported except plotting and other graphical features.
+-	Syntax and code highlighting is provided within the editor
+-	Matlib library for linear algebra is integrated with the platform.
+-	Static analysis of the code using the lint library is available to teach and learn better
 
 ## Limitations
-
+-	The initial setup and loading takes roughly 1 minute but once the system in booted on the browser, it’s quite fast to run and test code.
+-	The system is meant for educational purposes and small tasks. It can be slow to run computationally intensive code.  
 
 # Technical Documentation
 
