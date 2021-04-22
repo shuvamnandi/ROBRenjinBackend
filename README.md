@@ -49,10 +49,10 @@ The Renjin Version used (as specified in `pom.xml`) should be as below (newer ve
 </dependency>
 ```
 
-## DoppioJVM architecture and performance bottleneck  
+## DoppioJVM Architecture and Performance Bottleneck  
 
 
-## Extending the product with other libraries from Renjin
+## Extending the Product with other Libraries from Renjin
 
 R Packages like **matlib** are included to be used for executing code on the browser. These are added as Maven dependencies within the `pom.xml` file present in the ROBRenjinBackend GitHub repository.
 
