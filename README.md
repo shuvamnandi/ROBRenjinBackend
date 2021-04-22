@@ -6,32 +6,32 @@ Most popular high-level languages have playgrounds and scratch pads to work out 
 
 The below guide serves the purpose of explaining to our users how the system could be used and what are the various features it offers, and limitations it comes with. 
 
-## How to Use Our System
+### How to Use Our System
 It is fairly simple to work with ROB. Just go to the URL, be a little patient and then run your R code. 
 
 
-## Features 
+### Features 
 -	All the core features of language R are supported except plotting and other graphical features.
 -	Syntax and code highlighting is provided within the editor
 -	Matlib library for linear algebra is integrated with the platform.
 -	Static analysis of the code using the lint library is available to teach and learn better
 
-## Limitations
+### Limitations
 -	The initial setup and loading takes roughly 1 minute but once the system in booted on the browser, it’s quite fast to run and test code.
 -	The system is meant for educational purposes and small tasks. It can be slow to run computationally intensive code.  
 
-# Technical Documentation
+## Technical Documentation
 
-## How to Build and Run the Application from Source Code / Repositories
+### How to Build and Run the Application from Source Code / Repositories
 
-### Java Renjin
+#### Java Renjin
 
 The Java Renjin project associated with this repository is the backbone of our R programming language integration which runs on the Browser. It is available at the GitHub repository https://github.com/shuvamnandi/ROBRenjinBackend.git.
 
-#### Requirements: 
+##### Requirements: 
 - JDK version used to built Renjin must be JDK 1.8.
 
-#### To build this project, perform the following steps: 
+##### To build this project, perform the following steps: 
 
 1. Clone the repository locally: `git clone https://github.com/shuvamnandi/ROBRenjinBackend.git`.
 2. Change into the directory of the cloned repo: `cd ROBRenjinBackend`
@@ -44,13 +44,13 @@ An example R code can be run by running by calling the main function in the JAR 
 
 The Java JAR package thus generated also contains all of its dependencies from Renjin and also R packages that can be imported for evaluating R code. This JAR package would be deployed inside the directory of the web server run which executes on the browser. This is already done and is available within the UI code repository with this GitHub repository, hosting the Cadet front-end React application which supports R code execution.
 
-### DoppioJS & JavaPolyJS
+#### DoppioJS & JavaPolyJS
 
-### Cadet Front-end
+#### Cadet Front-end
 
 The Cadet Front-end code repository is available at https://github.com/nus-cs4215/x-frontend-t3-ps-sn-r.git. 
 
-## Renjin Version and Compatibility
+### Renjin Version and Compatibility
 
 The Renjin Version used (as specified in `pom.xml`) should be as below (newer versions do not work on DoppioJVM). This is a limitation of DoppioJVM.
 
@@ -62,10 +62,10 @@ The Renjin Version used (as specified in `pom.xml`) should be as below (newer ve
 </dependency>
 ```
 
-## DoppioJVM Architecture and Performance Bottleneck  
+### DoppioJVM Architecture and Performance Bottleneck  
 
 
-## Extending the Product with other Libraries from Renjin
+### Extending the Product with other Libraries from Renjin
 
 R Packages like **matlib** are included to be used for executing code on the browser. These are added as Maven dependencies within the `pom.xml` file present in the ROBRenjinBackend GitHub repository.
 
