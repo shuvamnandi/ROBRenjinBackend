@@ -21,6 +21,13 @@ It is fairly simple to work with ROB. Just go to the URL, be a little patient an
 
 # Technical Documentation
 
+
+## Systen Architecture
+
+
+## DoppioJVM Performance Bottleneck
+
+
 ## How to Build and Run the Application from Source Code / Repositories
 
 ### Java Renjin
@@ -73,9 +80,6 @@ The Renjin Version used (as specified in `pom.xml`) should be as below (newer ve
     <version>0.7.0-RC7</version>
 </dependency>
 ```
-
-## DoppioJVM Architecture and Performance Bottleneck  
-
 
 ## Extending the Product with other Libraries from Renjin
 
